@@ -17,7 +17,7 @@ header {
     background-image: url("../images/header1.jpg");
     background-size: cover;
     background-position: 0% 23%;
-    padding: 50px 50px 20px 50px;
+    padding: 50px 50px 30px 50px;
 }
 
 header div {
@@ -44,14 +44,10 @@ nav {
 
 /* Corpo */
 
-hr {
-    margin-top: 30px;
-    color: grey;
-}
-
 p.data {
     margin: 30px auto;
     font-size: 0.8em;
+    font-weight: 300;
 }
 
 h3.titulo {
@@ -73,6 +69,14 @@ div.postContent {
     font-weight: 300;
 }
 
+hr {
+    margin-top: 30px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 ul.pagination {
     margin-top: 30px;
 }
@@ -88,4 +92,9 @@ ul.pagination {
 footer p {
     color: white;
     font-size: 0.8em;
+    padding: 10px;
+}
+
+#infoBlog {
+    border-left: 1px solid black;
 }

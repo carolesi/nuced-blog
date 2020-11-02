@@ -4,9 +4,11 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
+
+/* Cabeçalho */
 
 header {
     display: flex;
@@ -29,34 +31,16 @@ header div img:nth-child(2) {
     max-height: 70px;
 }
 
+/* Navbar */
+
 nav {
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 30px;
-
     position: sticky;
     top: 0;
 }
 
-ul {
-    list-style: none;
+/* Corpo */
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    font-size: 0.9em;
-}
-
-li {
-    background-color: lightgray;
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px
-}
-
-main {
+main.main-grid {
     display: grid;
     grid-template-columns: 3fr 1fr;
     margin: 50px;
@@ -92,7 +76,10 @@ div.postContent {
     margin: 10px 0;
     text-align: justify;
     font-size: 0.9em;
+    font-weight: 300;
 }
+
+/* Rodapé */
 
 footer {
     background-color: grey;
@@ -114,4 +101,5 @@ footer p {
 
     border-left: 1px solid black;
     padding: 20px;
+    margin-top: 50px;
 }

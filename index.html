@@ -118,7 +118,7 @@
                 <p>Visualizações da página</p>
             </div>
         
-            <a class="btn-floating btn-large waves-effect waves-light green lighten-1" id="toTop" href="#!"><i class="material-icons">arrow_upward</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light green lighten-1" id="toTop"><i class="material-icons">arrow_upward</i></a>
     
         </div>
 
@@ -134,7 +134,15 @@
     </footer>
 
     <!-- JavaScript -->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        var botao = window.document.querySelector('#toTop')
+
+        botao.addEventListener('click', toTop)
+
+        function toTop (){
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 </body>
 </html>
